@@ -1,0 +1,166 @@
+{
+  "model_name": "Smart Krishi Beast Fertilizer Recommender INT8",
+  "input_features": [
+    "Soil_pH",
+    "Soil_Moisture",
+    "Organic_Carbon",
+    "Electrical_Conductivity",
+    "Nitrogen_Level",
+    "Phosphorus_Level",
+    "Potassium_Level",
+    "Temperature",
+    "Humidity",
+    "Rainfall",
+    "Fertilizer_Used_Last_Season",
+    "Yield_Last_Season",
+    "Soil_Type",
+    "Crop_Type",
+    "Crop_Growth_Stage",
+    "Season",
+    "Irrigation_Type",
+    "Previous_Crop"
+  ],
+  "scaler_mean": [
+    6.485728002262116,
+    35.41153100767136,
+    0.8447309997931123,
+    1.5431559991896153,
+    88.995,
+    48.9651,
+    64.147,
+    25.058905980205537,
+    60.09372698841095,
+    1588.0857978225708,
+    176.16550792007448,
+    4.5316659996032715,
+    1.5061,
+    3.033,
+    1.4979,
+    0.9937,
+    1.5144,
+    2.964
+  ],
+  "scaler_scale": [
+    1.1529064648851357,
+    14.412281160789417,
+    0.3723869336036891,
+    0.8394720963210706,
+    40.334657244112044,
+    23.194427822000698,
+    31.86561769368358,
+    8.601119859599324,
+    17.385250373830416,
+    810.951852840158,
+    72.23217840225344,
+    2.013420944984141,
+    1.1160478439565211,
+    1.9982269640859118,
+    1.1200873135608669,
+    0.8162477013750177,
+    1.1157027561138315,
+    2.0073126313556644
+  ],
+  "categorical_encoders": {
+    "Soil_Type": {
+      "Clay": 0,
+      "Loamy": 1,
+      "Sandy": 2,
+      "Silt": 3
+    },
+    "Crop_Type": {
+      "Cotton": 0,
+      "Maize": 1,
+      "Potato": 2,
+      "Rice": 3,
+      "Sugarcane": 4,
+      "Tomato": 5,
+      "Wheat": 6
+    },
+    "Crop_Growth_Stage": {
+      "Flowering": 0,
+      "Harvest": 1,
+      "Sowing": 2,
+      "Vegetative": 3
+    },
+    "Season": {
+      "Kharif": 0,
+      "Rabi": 1,
+      "Zaid": 2
+    },
+    "Irrigation_Type": {
+      "Canal": 0,
+      "Drip": 1,
+      "Rainfed": 2,
+      "Sprinkler": 3
+    },
+    "Previous_Crop": {
+      "Cotton": 0,
+      "Maize": 1,
+      "Potato": 2,
+      "Rice": 3,
+      "Sugarcane": 4,
+      "Tomato": 5,
+      "Wheat": 6
+    }
+  },
+  "target_classes": [
+    "Compost",
+    "DAP",
+    "MOP",
+    "NPK",
+    "SSP",
+    "Urea",
+    "Zinc Sulphate"
+  ],
+  "dosage_recipes": {
+    "Urea": {
+      "nutrient": "Nitrogen (46% N)",
+      "standard_dose_kg_per_acre": 50.0,
+      "bags_per_acre": "1 to 1.5 bags (45 kg/bag)",
+      "application_timing": "Split application: 50% at basal sowing, 25% at tillering, 25% before panicle emergence.",
+      "dosage_hi": "1 से 1.5 बोरी (45 किग्रा) प्रति एकड़। कल्ले फूटते समय और फूल आने से पहले दो बार में दें।"
+    },
+    "DAP": {
+      "nutrient": "Diammonium Phosphate (18% N, 46% P2O5)",
+      "standard_dose_kg_per_acre": 50.0,
+      "bags_per_acre": "1 bag (50 kg/bag)",
+      "application_timing": "Basal application at sowing directly near root zone.",
+      "dosage_hi": "1 बोरी (50 किग्रा) प्रति एकड़। बुवाई के समय कतारों में बीज से 3-5 सेमी नीचे डालें।"
+    },
+    "MOP": {
+      "nutrient": "Muriate of Potash (60% K2O)",
+      "standard_dose_kg_per_acre": 30.0,
+      "bags_per_acre": "0.6 bag (30 kg)",
+      "application_timing": "Apply at early vegetative stage to enhance drought tolerance and grain filling.",
+      "dosage_hi": "30 किग्रा प्रति एकड़। वानस्पतिक बढ़वार के समय दें ताकि सूखा और रोग सहनशीलता बढ़े।"
+    },
+    "NPK": {
+      "nutrient": "Balanced Complex NPK (10:26:26 or 12:32:16)",
+      "standard_dose_kg_per_acre": 50.0,
+      "bags_per_acre": "1 bag (50 kg/bag)",
+      "application_timing": "Balanced nutrition during sowing and vegetative growth.",
+      "dosage_hi": "1 बोरी (50 किग्रा) प्रति एकड़। संतुलित पोषण के लिए बुवाई के समय दें।"
+    },
+    "Compost": {
+      "nutrient": "Well-decomposed Farmyard Manure (FYM) & Humus",
+      "standard_dose_kg_per_acre": 2000.0,
+      "bags_per_acre": "2 to 3 tons per acre",
+      "application_timing": "Incorporate during primary land preparation to boost organic carbon & water retention.",
+      "dosage_hi": "2 से 3 ट्रॉली अच्छी सड़ी गोबर की खाद। खेत की जुताई के समय अच्छी तरह मिलाएं।"
+    },
+    "Zinc Sulphate": {
+      "nutrient": "Micronutrient Zinc (21% Zn + 10% S)",
+      "standard_dose_kg_per_acre": 10.0,
+      "bags_per_acre": "10 kg/acre",
+      "application_timing": "Corrects chlorosis/Khaira disease in rice and cereals. Never mix directly with DAP!",
+      "dosage_hi": "10 किग्रा प्रति एकड़। जिंक की कमी (खैरा रोग) दूर करने हेतु। डीएपी के साथ कभी न मिलाएं!"
+    },
+    "SSP": {
+      "nutrient": "Single Super Phosphate (16% P2O5 + 11% Sulphur)",
+      "standard_dose_kg_per_acre": 100.0,
+      "bags_per_acre": "2 bags (50 kg/bag)",
+      "application_timing": "Best for oilseeds and pulses needing high sulphur and phosphorus.",
+      "dosage_hi": "2 बोरी (100 किग्रा) प्रति एकड़। तिलहन व दलहनी फसलों के लिए सर्वोत्तम।"
+    }
+  }
+}

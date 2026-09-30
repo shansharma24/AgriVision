@@ -1,0 +1,382 @@
+{
+  "Rice_Blast": {
+    "crop": "Rice",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "name_hi": "धान का झोंका रोग (Rice Blast)",
+    "symptoms": "Spindle-shaped lesions with grayish centers and brown borders on leaves and neck nodes.",
+    "pesticide_advisory": "Tricyclazole 75% WP (Baan) @ 0.6g/L water.",
+    "pesticide_advisory_hi": "ट्राइसाइक्लाजोल 75% WP @ 0.6 ग्राम प्रति लीटर पानी में मिलाकर छिड़कें।",
+    "organic_remedy": "Pseudomonas fluorescens 2.5g/L foliar spray.",
+    "organic_remedy_hi": "स्यूडोमोनास फ्लोरोसेंस 2.5 ग्राम प्रति लीटर का छिड़काव करें।"
+  },
+  "Rice_Brown_Spot": {
+    "crop": "Rice",
+    "disease": "Brown Spot (Bipolaris oryzae)",
+    "name_hi": "धान का भूरा धब्बा रोग (Brown Spot)",
+    "symptoms": "Oval brown spots on leaf blade and sheath with yellow halo.",
+    "pesticide_advisory": "Mancozeb 75% WP @ 2g/L or Propiconazole 25% EC @ 1ml/L.",
+    "pesticide_advisory_hi": "मैंकोजेब 75 WP @ 2g प्रति लीटर या प्रोपिकोनाजोल @ 1ml प्रति लीटर।",
+    "organic_remedy": "Foliar spray of 5% cow urine or neem seed kernel extract (NSKE 5%).",
+    "organic_remedy_hi": "5% गोमूत्र या नीम बीज अर्क (NSKE 5%) का छिड़काव करें।"
+  },
+  "Rice_Bacterial_Leaf_Blight": {
+    "crop": "Rice",
+    "disease": "Bacterial Leaf Blight (Xanthomonas oryzae)",
+    "name_hi": "धान का जीवाणु झुलसा (Bacterial Blight)",
+    "symptoms": "Water-soaked stripes along leaf margins turning wavy yellow-white with bacterial ooze.",
+    "pesticide_advisory": "Streptocycline 1g + Copper Oxychloride 50 WP 25g in 10L water.",
+    "pesticide_advisory_hi": "स्ट्रेप्टोसाइक्लिन (1g) + कॉपर ऑक्सीक्लोराइड (25g) प्रति 10 लीटर पानी में छिड़कें।",
+    "organic_remedy": "Foliar spray of fresh cow dung supernatant (20% slurry).",
+    "organic_remedy_hi": "ताजे गाय के गोबर का 20% घोल छानकर छिड़काव करें।"
+  },
+  "Rice_Sheath_Rot": {
+    "crop": "Rice",
+    "disease": "Sheath Rot (Sarocladium oryzae)",
+    "name_hi": "धान का आवरण सड़न (Sheath Rot)",
+    "symptoms": "Oblong irregular reddish-brown lesions enclosing un-emerged young panicles.",
+    "pesticide_advisory": "Hexaconazole 5% EC @ 2ml/L or Validamycin 3% L @ 2ml/L.",
+    "pesticide_advisory_hi": "हेक्साकोनाजोल 5% EC @ 2 मिली या वैलिडामाइसिन @ 2 मिली प्रति लीटर।",
+    "organic_remedy": "Neem oil 3000 ppm @ 3ml/L with natural surfactant.",
+    "organic_remedy_hi": "नीम तेल 3000 ppm @ 3ml प्रति लीटर का छिड़काव करें।"
+  },
+  "Rice_Healthy": {
+    "crop": "Rice",
+    "disease": "Healthy Rice Crop",
+    "name_hi": "स्वस्थ धान (कोई रोग नहीं)",
+    "symptoms": "Vigorous upright tillers with deep green, clean canopy.",
+    "pesticide_advisory": "No chemical required. Maintain balanced water depth (2-3 cm).",
+    "pesticide_advisory_hi": "किसी रासायनिक छिड़काव की आवश्यकता नहीं है।",
+    "organic_remedy": "Continue Azospirillum and PSB biofertilizers.",
+    "organic_remedy_hi": "अजोस्पिरिलम और पीएसबी जैविक खाद का प्रयोग जारी रखें।"
+  },
+  "Wheat_Yellow_Rust": {
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
+    "name_hi": "गेहूं का पीला रतुआ (Yellow Rust)",
+    "symptoms": "Bright yellow powdery pustules arranged in parallel stripes along leaf veins.",
+    "pesticide_advisory": "Propiconazole 25% EC (Tilt) @ 1ml/L water immediately.",
+    "pesticide_advisory_hi": "प्रोपिकोनाजोल 25% EC (टिल्ट) @ 1 मिली प्रति लीटर पानी तुरंत स्प्रे करें।",
+    "organic_remedy": "Foliar spray of sour buttermilk (Chhachh 5%) and neem extract.",
+    "organic_remedy_hi": "5% खट्टी छाछ और नीम के अर्क का छिड़काव करें।"
+  },
+  "Wheat_Brown_Leaf_Rust": {
+    "crop": "Wheat",
+    "disease": "Brown Leaf Rust (Puccinia triticina)",
+    "name_hi": "गेहूं का भूरा रतुआ (Brown Rust)",
+    "symptoms": "Small, round orange-brown pustules scattered randomly across leaf blades.",
+    "pesticide_advisory": "Tebuconazole 25.9% EC @ 1ml/L water.",
+    "pesticide_advisory_hi": "टेबुकोनाजोल 25.9% EC @ 1 मिली प्रति लीटर पानी का छिड़काव करें।",
+    "organic_remedy": "Avoid excess late nitrogen topdressing; spray botanical extract.",
+    "organic_remedy_hi": "देर से यूरिया डालने से बचें; वानस्पतिक काढ़े का छिड़काव करें।"
+  },
+  "Wheat_Powdery_Mildew": {
+    "crop": "Wheat",
+    "disease": "Powdery Mildew (Blumeria graminis)",
+    "name_hi": "गेहूं का चूर्णिल आसिता (Powdery Mildew)",
+    "symptoms": "White to gray powdery fungal patches on lower leaf surfaces and stems.",
+    "pesticide_advisory": "Wettable Sulphur 80% WP @ 3g/L or Hexaconazole 5% EC @ 1ml/L.",
+    "pesticide_advisory_hi": "घुलनशील गंधक (Wettable Sulphur 80%) @ 3 ग्राम प्रति लीटर।",
+    "organic_remedy": "Potassium bicarbonate or baking soda foliar spray (5g/L).",
+    "organic_remedy_hi": "बेकिंग सोडा (5 ग्राम प्रति लीटर) का छिड़काव करें।"
+  },
+  "Wheat_Healthy": {
+    "crop": "Wheat",
+    "disease": "Healthy Wheat Crop",
+    "name_hi": "स्वस्थ गेहूं (कोई रोग नहीं)",
+    "symptoms": "Uniform emerald green leaves without pustules or chlorotic flecking.",
+    "pesticide_advisory": "No pesticide needed. Provide critical irrigation at CRI stage.",
+    "pesticide_advisory_hi": "किसी कीटनाशक की आवश्यकता नहीं। ताज मूल अवस्था (CRI) पर सिंचाई करें।",
+    "organic_remedy": "Foliar spray of vermiwash (10%).",
+    "organic_remedy_hi": "10% वर्मीवॉश का पर्ण छिड़काव करें।"
+  },
+  "Cotton_Bacterial_Blight": {
+    "crop": "Cotton",
+    "disease": "Bacterial Blight / Angular Leaf Spot (Xanthomonas citri pv. malvacearum)",
+    "name_hi": "कपास का जीवाणु अंगमारी / कोणीय पर्ण धब्बा",
+    "symptoms": "Angular, water-soaked brown spots bound by leaf veinlets.",
+    "pesticide_advisory": "Copper Oxychloride 50 WP @ 2.5g/L + Streptocycline @ 1g/10L.",
+    "pesticide_advisory_hi": "कॉपर ऑक्सीक्लोराइड 50 WP (2.5g/L) + स्ट्रेप्टोसाइक्लिन (1g/10L)।",
+    "organic_remedy": "Spray Paenibacillus macerans or cow urine extract (5%).",
+    "organic_remedy_hi": "5% गोमूत्र अर्क का पत्तियों पर छिड़काव करें।"
+  },
+  "Cotton_Boll_Rot": {
+    "crop": "Cotton",
+    "disease": "Cotton Boll Rot & Leaf Spot (Alternaria macrospora)",
+    "name_hi": "कपास का टिंडा सड़न एवं पर्ण चित्ती रोग",
+    "symptoms": "Brown circular spots with purple margins on leaves and rotting of young bolls.",
+    "pesticide_advisory": "Mancozeb 75 WP @ 2.5g/L or Carbendazim 50 WP @ 1g/L.",
+    "pesticide_advisory_hi": "मैंकोजेब 75 WP @ 2.5g या बाविस्टिन @ 1g प्रति लीटर छिड़कें।",
+    "organic_remedy": "Neem cake soil incorporation (100 kg/acre).",
+    "organic_remedy_hi": "खेत में 100 किग्रा/एकड़ नीम की खली मिलाएं।"
+  },
+  "Cotton_Grey_Mildew": {
+    "crop": "Cotton",
+    "disease": "Grey Mildew / Dahiya Disease (Ramularia areola)",
+    "name_hi": "कपास का दहिया रोग (Grey Mildew)",
+    "symptoms": "White frosty powdery angular mildew patches on leaf undersides.",
+    "pesticide_advisory": "Wettable Sulphur 80 WP @ 3g/L or Carbendazim 50 WP @ 1g/L.",
+    "pesticide_advisory_hi": "घुलनशील सल्फर @ 3g प्रति लीटर का छिड़काव करें।",
+    "organic_remedy": "Spray Trichoderma viride 5g/L.",
+    "organic_remedy_hi": "ट्राइकोडर्मा विरिडी 5 ग्राम प्रति लीटर छिड़कें।"
+  },
+  "Cotton_Healthy": {
+    "crop": "Cotton",
+    "disease": "Healthy Cotton Crop",
+    "name_hi": "स्वस्थ कपास (कोई रोग नहीं)",
+    "symptoms": "Broad dark-green leaves, vigorous branching, healthy squares.",
+    "pesticide_advisory": "No pesticide required. Monitor with pheromone traps.",
+    "pesticide_advisory_hi": "कीटनाशक की जरूरत नहीं। फेरोमोन ट्रैप से निगरानी रखें।",
+    "organic_remedy": "Apply Panchagavya 3% foliar spray.",
+    "organic_remedy_hi": "पंचगव्य 3% का छिड़काव करें।"
+  },
+  "Sugarcane_Red_Rot": {
+    "crop": "Sugarcane",
+    "disease": "Red Rot (Colletotrichum falcatum)",
+    "name_hi": "गन्ने का लाल सड़न रोग (कैंसर)",
+    "symptoms": "Discoloration of crown leaves, red vascular bundles with transverse white patches inside stalk.",
+    "pesticide_advisory": "Carbendazim 50% WP (Bavistin) @ 2g/L set-treatment.",
+    "pesticide_advisory_hi": "बाविस्टिन (कार्बेन्डाजिम) 2g/L के घोल में बीज शोधन करें।",
+    "organic_remedy": "Hot water seed treatment at 52°C for 30 min before planting.",
+    "organic_remedy_hi": "बोने से पहले 52°C गर्म पानी में 30 मिनट तक बीज का उपचार करें।"
+  },
+  "Sugarcane_Smut": {
+    "crop": "Sugarcane",
+    "disease": "Sugarcane Smut (Sporisorium scitamineum)",
+    "name_hi": "गन्ने का कांगियारी / कंडुआ रोग (Smut)",
+    "symptoms": "Characteristic long, black curved whip-like structure emerging from the central spindle.",
+    "pesticide_advisory": "Triadimefon 25 WP @ 1g/L set-dip treatment.",
+    "pesticide_advisory_hi": "ट्रायडिमेफोन 25 WP @ 1g/L के घोल में गन्ने के टुकड़ों को डुबोएं।",
+    "organic_remedy": "Carefully rogue out and incinerate infected whips inside polythene bags.",
+    "organic_remedy_hi": "काले चाबुक जैसे डंठलों को पॉलीथिन बैग में ढककर काटकर जला दें।"
+  },
+  "Sugarcane_Healthy": {
+    "crop": "Sugarcane",
+    "disease": "Healthy Sugarcane Crop",
+    "name_hi": "स्वस्थ गन्ना (कोई रोग नहीं)",
+    "symptoms": "Thick juicy stalks with robust green canopy and unblemished rind.",
+    "pesticide_advisory": "No treatment required. Maintain furrow irrigation schedule.",
+    "pesticide_advisory_hi": "किसी उपचार की आवश्यकता नहीं।",
+    "organic_remedy": "Trash mulching between rows to conserve moisture.",
+    "organic_remedy_hi": "पंक्तियों के बीच सूखी पत्तियों की मल्चिंग करें।"
+  },
+  "Tomato_Bacterial_Spot": {
+    "crop": "Tomato",
+    "disease": "Bacterial Spot (Xanthomonas vesicatoria)",
+    "name_hi": "टमाटर का जीवाणु धब्बा रोग",
+    "symptoms": "Small greasy water-soaked circular black spots with translucent halo on foliage and fruit.",
+    "pesticide_advisory": "Copper Hydroxide 77 WP @ 2g/L + Streptocycline 1g/10L.",
+    "pesticide_advisory_hi": "कॉपर हाइड्रॉक्साइड 77 WP (2g/L) + स्ट्रेप्टोसाइक्लिन (1g/10L) छिड़कें।",
+    "organic_remedy": "Foliar copper soap or biofungicide Bacillus subtilis.",
+    "organic_remedy_hi": "बैसिलस सबटिलिस जैविक फफूंदनाशक का छिड़काव करें।"
+  },
+  "Tomato_Early_Blight": {
+    "crop": "Tomato",
+    "disease": "Early Blight (Alternaria solani)",
+    "name_hi": "टमाटर का अगेती झुलसा",
+    "symptoms": "Concentric dark brown rings resembling a target board on mature lower leaves.",
+    "pesticide_advisory": "Chlorothalonil 75 WP @ 2g/L or Mancozeb 75 WP @ 2g/L.",
+    "pesticide_advisory_hi": "क्लोरोथैलोनिल या मैंकोजेब 2g/L का छिड़काव करें।",
+    "organic_remedy": "Spray Trichoderma viride @ 5g/L and practice bottom-leaf pruning.",
+    "organic_remedy_hi": "ट्राइकोडर्मा विरिडी 5g/L का छिड़काव करें और निचली पत्तियां काटें।"
+  },
+  "Tomato_Late_Blight": {
+    "crop": "Tomato",
+    "disease": "Late Blight (Phytophthora infestans)",
+    "name_hi": "टमाटर का पछेती झुलसा (अत्यधिक संक्रामक)",
+    "symptoms": "Water-soaked dark purplish lesions rapidly expanding under humid cool conditions.",
+    "pesticide_advisory": "Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/L immediately.",
+    "pesticide_advisory_hi": "रिडोमिल गोल्ड (Ridomil Gold) 2.5g/L का तुरंत छिड़काव करें।",
+    "organic_remedy": "Bordeaux mixture 1% (Copper sulphate + lime foliar spray).",
+    "organic_remedy_hi": "1% बोर्डो मिश्रण (नीला थोथा + चूना) का छिड़काव करें।"
+  },
+  "Tomato_Leaf_Mold": {
+    "crop": "Tomato",
+    "disease": "Leaf Mold (Passalora fulva)",
+    "name_hi": "टमाटर का पर्ण फफूंद (Leaf Mold)",
+    "symptoms": "Pale greenish-yellow spots on upper leaf surface with olive-brown velvety growth underneath.",
+    "pesticide_advisory": "Difenoconazole 25 EC @ 0.5ml/L or Azoxystrobin @ 1ml/L.",
+    "pesticide_advisory_hi": "डाइफेनोकोनाजोल 25 EC @ 0.5 मिली प्रति लीटर पानी में मिलाकर स्प्रे करें।",
+    "organic_remedy": "Improve greenhouse ventilation and reduce evening irrigation humidity.",
+    "organic_remedy_hi": "खेत/पॉलीहाउस में हवा का संचार बढ़ाएं और नमी कम करें।"
+  },
+  "Tomato_Septoria_Leaf_Spot": {
+    "crop": "Tomato",
+    "disease": "Septoria Leaf Spot (Septoria lycopersici)",
+    "name_hi": "टमाटर का सेप्टोरिया पर्ण चित्ती",
+    "symptoms": "Numerous circular spots with grayish-white centers and distinctive dark brown margins.",
+    "pesticide_advisory": "Mancozeb 75 WP @ 2g/L or Copper Oxychloride @ 2.5g/L.",
+    "pesticide_advisory_hi": "मैंकोजेब 75 WP @ 2 ग्राम प्रति लीटर पानी का छिड़काव करें।",
+    "organic_remedy": "Strip infected lower leaves and mulch base with straw.",
+    "organic_remedy_hi": "संक्रमित निचली पत्तियों को तोड़कर नष्ट करें और भूसे की मल्चिंग करें।"
+  },
+  "Tomato_Spider_Mites": {
+    "crop": "Tomato",
+    "disease": "Two-Spotted Spider Mites (Tetranychus urticae)",
+    "name_hi": "टमाटर की लाल मकड़ी / माइट (Spider Mites)",
+    "symptoms": "Fine yellow stippling/bronzing on leaves accompanied by delicate silken webbings.",
+    "pesticide_advisory": "Spiromesifen 22.9% SC @ 1ml/L or Abamectin 1.9% EC @ 0.5ml/L.",
+    "pesticide_advisory_hi": "स्पाइरोमेसिफेन (ओबेरॉन) @ 1ml प्रति लीटर पानी में मिलाकर पत्तियों के नीचे स्प्रे करें।",
+    "organic_remedy": "Foliar spray of Neem oil 10,000 ppm @ 2ml/L with wetting agent.",
+    "organic_remedy_hi": "10,000 ppm नीम तेल @ 2ml प्रति लीटर का छिड़काव करें।"
+  },
+  "Tomato_Target_Spot": {
+    "crop": "Tomato",
+    "disease": "Target Spot (Corynespora cassiicola)",
+    "name_hi": "टमाटर का लक्ष्य धब्बा (Target Spot)",
+    "symptoms": "Brown circular lesions with light brown centers and dark concentric rings.",
+    "pesticide_advisory": "Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1ml/L.",
+    "pesticide_advisory_hi": "एजोक्सीस्ट्रोबिन + डाइफेनोकोनाजोल @ 1 मिली प्रति लीटर छिड़कें।",
+    "organic_remedy": "Crop rotation with non-host crops and canopy pruning.",
+    "organic_remedy_hi": "फसल चक्र अपनाएं और हवा के आवागमन के लिए कटाई-छंटाई करें।"
+  },
+  "Tomato_Yellow_Leaf_Curl_Virus": {
+    "crop": "Tomato",
+    "disease": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "name_hi": "टमाटर का पर्ण कुंचन वायरस (माथा बंधना)",
+    "symptoms": "Severe stunting, upward leaf curling, chlorotic margins, and blossom drop.",
+    "pesticide_advisory": "Control Whitefly vector: Diafenthiuron 50 WP @ 1.2g/L or Pyriproxyfen @ 1ml/L.",
+    "pesticide_advisory_hi": "सफेद मक्खी नियंत्रण: डायाफेन्थियूरोन 50 WP @ 1.2g/L छिड़कें।",
+    "organic_remedy": "Install 20 yellow sticky traps per acre and use silver reflective mulch.",
+    "organic_remedy_hi": "20 पीले चिपचिपे ट्रैप प्रति एकड़ लगाएं और सिल्वर मल्चिंग करें।"
+  },
+  "Tomato_Mosaic_Virus": {
+    "crop": "Tomato",
+    "disease": "Tomato Mosaic Virus (ToMV)",
+    "name_hi": "टमाटर का मोज़ेक वायरस (ToMV)",
+    "symptoms": "Mottled light and dark green patterns on leaves with distortion and fern-like foliage.",
+    "pesticide_advisory": "No direct viricide. Disinfect equipment with 10% Trisodium Phosphate.",
+    "pesticide_advisory_hi": "कोई रासायनिक दवा नहीं। औजारों को ट्राइसोडियम फॉस्फेट से धोएं।",
+    "organic_remedy": "Spray 10% fresh skimmed milk during transplanting to inhibit transmission.",
+    "organic_remedy_hi": "रोपाई के समय 10% मलाई रहित दूध का छिड़काव करें।"
+  },
+  "Tomato_Healthy": {
+    "crop": "Tomato",
+    "disease": "Healthy Tomato Crop",
+    "name_hi": "स्वस्थ टमाटर (कोई रोग नहीं)",
+    "symptoms": "Lush dark green serrated leaves with robust blossom clusters.",
+    "pesticide_advisory": "No pesticide required. Apply balanced 19:19:19 fertigation.",
+    "pesticide_advisory_hi": "किसी कीटनाशक की जरूरत नहीं। संतुलित 19:19:19 खाद दें।",
+    "organic_remedy": "Apply sea-weed extract @ 2ml/L for fruit setting.",
+    "organic_remedy_hi": "समुद्री शैवाल अर्क (Seaweed extract) @ 2ml/L का छिड़काव करें।"
+  },
+  "Potato_Early_Blight": {
+    "crop": "Potato",
+    "disease": "Potato Early Blight (Alternaria solani)",
+    "name_hi": "आलू का अगेती झुलसा",
+    "symptoms": "Brown target-board spots starting from lower leaves, leading to defoliation.",
+    "pesticide_advisory": "Mancozeb 75 WP @ 2.5g/L or Propineb 70 WP @ 2g/L.",
+    "pesticide_advisory_hi": "मैंकोजेब 75 WP या प्रोपिनेब @ 2g प्रति लीटर पानी का छिड़काव करें।",
+    "organic_remedy": "Foliar spray of Trichoderma harzianum @ 5g/L.",
+    "organic_remedy_hi": "ट्राइकोडर्मा हारजियानम 5 ग्राम प्रति लीटर छिड़कें।"
+  },
+  "Potato_Late_Blight": {
+    "crop": "Potato",
+    "disease": "Potato Late Blight (Phytophthora infestans)",
+    "name_hi": "आलू का पछेती झुलसा",
+    "symptoms": "Rapid blighting of leaves and stems under cool wet weather; white downy ring on underside.",
+    "pesticide_advisory": "Cymoxanil 8% + Mancozeb 64% (Curzate) @ 2g/L or Ridomil Gold @ 2.5g/L.",
+    "pesticide_advisory_hi": "कर्जेट (Cymoxanil + Mancozeb) 2g प्रति लीटर तुरंत छिड़कें।",
+    "organic_remedy": "Destroy and incinerate haulms 10 days before harvesting.",
+    "organic_remedy_hi": "आलू खोदने से 10 दिन पहले संक्रमित लताओं को काटकर नष्ट करें।"
+  },
+  "Potato_Healthy": {
+    "crop": "Potato",
+    "disease": "Healthy Potato Crop",
+    "name_hi": "स्वस्थ आलू (कोई रोग नहीं)",
+    "symptoms": "Bushy dark green foliage, vigorous stolon formation, zero rot.",
+    "pesticide_advisory": "No pesticide required. Maintain uniform furrow moisture.",
+    "pesticide_advisory_hi": "कीटनाशक की जरूरत नहीं है। संतुलित नमी बनाए रखें।",
+    "organic_remedy": "Top dress with well-decomposed vermicompost.",
+    "organic_remedy_hi": "अच्छी तरह सड़ी हुई केंचुआ खाद का प्रयोग करें।"
+  },
+  "Corn_Common_Rust": {
+    "crop": "Corn/Maize",
+    "disease": "Common Corn Rust (Puccinia sorghi)",
+    "name_hi": "मक्का का रतुआ रोग (Common Rust)",
+    "symptoms": "Oval cinnamon-brown pustules on upper and lower surfaces of corn leaves.",
+    "pesticide_advisory": "Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1ml/L.",
+    "pesticide_advisory_hi": "एजोक्सीस्ट्रोबिन + डाइफेनोकोनाजोल @ 1 मिली प्रति लीटर छिड़कें।",
+    "organic_remedy": "Select rust-resistant hybrids; spray neem extract.",
+    "organic_remedy_hi": "रोग प्रतिरोधी संकर किस्में चुनें; नीम के अर्क का छिड़काव करें।"
+  },
+  "Corn_Northern_Leaf_Blight": {
+    "crop": "Corn/Maize",
+    "disease": "Northern Corn Leaf Blight (Exserohilum turcicum)",
+    "name_hi": "मक्का का उत्तरी पर्ण झुलसा (NCLB)",
+    "symptoms": "Long, cigar-shaped grayish-green to tan lesions (2 to 15 cm) parallel to leaf margins.",
+    "pesticide_advisory": "Propiconazole 25% EC @ 1ml/L or Mancozeb 75 WP @ 2.5g/L.",
+    "pesticide_advisory_hi": "प्रोपिकोनाजोल 25% EC @ 1 मिली प्रति लीटर पानी में स्प्रे करें।",
+    "organic_remedy": "Deep summer tillage and crop debris incorporation.",
+    "organic_remedy_hi": "गर्मियों में गहरी जुताई करें और फसल अवशेषों को मिट्टी में दबाएं।"
+  },
+  "Corn_Fall_Armyworm_Injury": {
+    "crop": "Corn/Maize",
+    "disease": "Fall Armyworm Foliar Damage (Spodoptera frugiperda)",
+    "name_hi": "मक्का का फॉल आर्मीवर्म क्षति",
+    "symptoms": "Shot-hole feeding damage, skeletonized whorl leaves filled with sawdust frass.",
+    "pesticide_advisory": "Chlorantraniliprole 18.5% SC (Coragen) @ 0.4ml/L into whorls.",
+    "pesticide_advisory_hi": "कोराजन (Chlorantraniliprole) 0.4 मिली प्रति लीटर पोंगे (Whorl) के अंदर डालें।",
+    "organic_remedy": "Apply dry sand + wood ash (9:1) directly into whorls; release Trichogramma.",
+    "organic_remedy_hi": "सूखी रेत और राख (9:1) पोंगे में डालें; परजीवी मित्र कीट छोड़ें।"
+  },
+  "Corn_Healthy": {
+    "crop": "Corn/Maize",
+    "disease": "Healthy Maize Crop",
+    "name_hi": "स्वस्थ मक्का (कोई रोग नहीं)",
+    "symptoms": "Broad dark-green leaves, robust stalks, zero shot-hole damage.",
+    "pesticide_advisory": "No pesticide required. Provide irrigation at silking/tasseling.",
+    "pesticide_advisory_hi": "किसी दवा की जरूरत नहीं। भुट्टा बनते समय नमी की कमी न होने दें।",
+    "organic_remedy": "Foliar spray of 2% potassium nitrate for cob filling.",
+    "organic_remedy_hi": "दाना भराव के लिए 2% पोटेशियम नाइट्रेट का छिड़काव करें।"
+  },
+  "Grape_Black_Rot": {
+    "crop": "Grape",
+    "disease": "Grape Black Rot (Guignardia bidwellii)",
+    "name_hi": "अंगूर का काला सड़न रोग (Black Rot)",
+    "symptoms": "Small yellowish circular leaf spots; berries shrivel into hard, black mummies.",
+    "pesticide_advisory": "Myclobutanil 10% WP @ 0.5g/L or Mancozeb 75 WP @ 2g/L.",
+    "pesticide_advisory_hi": "माइक्लोबुटानिल 10% WP @ 0.5 ग्राम प्रति लीटर छिड़कें।",
+    "organic_remedy": "Prune mummified berry bunches and spray Copper Sulphate 1%.",
+    "organic_remedy_hi": "सूखे सड़े गुच्छों को काटकर जलाएं और 1% कॉपर सल्फेट स्प्रे करें।"
+  },
+  "Grape_Esca_Black_Measles": {
+    "crop": "Grape",
+    "disease": "Esca / Black Measles (Phaeomoniella chlamydospora)",
+    "name_hi": "अंगूर का एस्का / ब्लैक मीजल्स रोग",
+    "symptoms": "'Tiger-stripe' interveinal chlorosis and necrosis; dark spots on grape berry skin.",
+    "pesticide_advisory": "Fosetyl-Al 80 WP @ 2.5g/L or clean wound protection with fungicide paste.",
+    "pesticide_advisory_hi": "फोसेटाइल-एल (Fosetyl-Al) 2.5g/L या कटाई के घावों पर कवकनाशी लेप लगाएं।",
+    "organic_remedy": "Disinfect pruning shears with 70% alcohol between vines.",
+    "organic_remedy_hi": "छंटाई वाले औजारों को स्प्रिट से कीटाणुरहित करें।"
+  },
+  "Grape_Leaf_Blight": {
+    "crop": "Grape",
+    "disease": "Grape Leaf Blight / Isariopsis Clavispora",
+    "name_hi": "अंगूर का पर्ण झुलसा रोग",
+    "symptoms": "Large irregular brown necrotic lesions on foliage leading to premature leaf drop.",
+    "pesticide_advisory": "Copper Oxychloride 50 WP @ 2.5g/L or Mancozeb @ 2g/L.",
+    "pesticide_advisory_hi": "कॉपर ऑक्सीक्लोराइड 50 WP @ 2.5 ग्राम प्रति लीटर पानी।",
+    "organic_remedy": "Foliar spray of bio-agent Trichoderma viride.",
+    "organic_remedy_hi": "ट्राइकोडर्मा विरिडी का पर्ण छिड़काव करें।"
+  },
+  "Grape_Healthy": {
+    "crop": "Grape",
+    "disease": "Healthy Grapevine",
+    "name_hi": "स्वस्थ अंगूर की बेल",
+    "symptoms": "Vibrant emerald canopy, healthy tendrils, pristine grape bunches.",
+    "pesticide_advisory": "No pesticide required. Ensure proper canopy shoot thinning.",
+    "pesticide_advisory_hi": "दवा की जरूरत नहीं। हवा और धूप के लिए अतिरिक्त शाखाएं हटाएं।",
+    "organic_remedy": "Spray bio-stimulants for berry elongation.",
+    "organic_remedy_hi": "जैविक वर्धक का छिड़काव करें।"
+  },
+  "Apple_Scab": {
+    "crop": "Apple",
+    "disease": "Apple Scab (Venturia inaequalis)",
+    "name_hi": "सेब का स्केब रोग (दाद रोग)",
+    "symptoms": "Dull olive-green to black velvety spots on leaves and scabby corky spots on fruit.",
+    "pesticide_advisory": "Difenoconazole 25 EC @ 0.3ml/L or Captan 50 WP @ 2.5g/L.",
+    "pesticide_advisory_hi": "डाइफेनोकोनाजोल 25 EC @ 0.3ml/L या कैप्टन 50 WP @ 2.5g/L छिड़कें।",
+    "organic_remedy": "Spray 5% Urea solution on orchard floor at leaf fall to speed up leaf decomposition.",
+    "organic_remedy_hi": "पत्तझड़ के समय जमीन पर 5% यूरिया का छिड़काव करें जिससे पुरानी पत्तियां गल जाएं।"
+  }
+}

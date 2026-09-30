@@ -1,0 +1,210 @@
+{
+  "model_name": "Smart Krishi Beast Multi-Crop Recommender INT8",
+  "feature_names": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "scaler_mean": [
+    50.551818181818184,
+    53.36272727272727,
+    48.14909090909091,
+    25.616243837529964,
+    71.48177924459631,
+    6.469480065757578,
+    103.46365539290689
+  ],
+  "scaler_scale": [
+    36.90894257695227,
+    32.97838509495386,
+    50.636418345000635,
+    5.062597608073421,
+    22.258751091906078,
+    0.7737617762752458,
+    54.94589655617226
+  ],
+  "crop_classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "crop_profiles": {
+    "rice": {
+      "name_hi": "धान",
+      "duration_days": 120,
+      "yield_ton_acre": 2.5,
+      "msp_inr_quintal": 2300,
+      "water_need": "High"
+    },
+    "maize": {
+      "name_hi": "मक्का",
+      "duration_days": 100,
+      "yield_ton_acre": 3.0,
+      "msp_inr_quintal": 2225,
+      "water_need": "Medium"
+    },
+    "chickpea": {
+      "name_hi": "चना (दलहन)",
+      "duration_days": 110,
+      "yield_ton_acre": 1.2,
+      "msp_inr_quintal": 5440,
+      "water_need": "Low"
+    },
+    "kidneybeans": {
+      "name_hi": "राजमा",
+      "duration_days": 90,
+      "yield_ton_acre": 1.0,
+      "msp_inr_quintal": 7500,
+      "water_need": "Medium"
+    },
+    "pigeonpeas": {
+      "name_hi": "अरहर / तुअर",
+      "duration_days": 150,
+      "yield_ton_acre": 1.1,
+      "msp_inr_quintal": 7550,
+      "water_need": "Low"
+    },
+    "mothbeans": {
+      "name_hi": "मोठ",
+      "duration_days": 75,
+      "yield_ton_acre": 0.6,
+      "msp_inr_quintal": 6500,
+      "water_need": "Very Low"
+    },
+    "mungbean": {
+      "name_hi": "मूंग",
+      "duration_days": 70,
+      "yield_ton_acre": 0.8,
+      "msp_inr_quintal": 8682,
+      "water_need": "Low"
+    },
+    "blackgram": {
+      "name_hi": "उड़द",
+      "duration_days": 80,
+      "yield_ton_acre": 0.8,
+      "msp_inr_quintal": 7400,
+      "water_need": "Low"
+    },
+    "lentil": {
+      "name_hi": "मसूर",
+      "duration_days": 110,
+      "yield_ton_acre": 1.0,
+      "msp_inr_quintal": 6700,
+      "water_need": "Low"
+    },
+    "pomegranate": {
+      "name_hi": "अनार",
+      "duration_days": 365,
+      "yield_ton_acre": 6.0,
+      "msp_inr_quintal": 9000,
+      "water_need": "Medium"
+    },
+    "banana": {
+      "name_hi": "केला",
+      "duration_days": 300,
+      "yield_ton_acre": 25.0,
+      "msp_inr_quintal": 1800,
+      "water_need": "Very High"
+    },
+    "mango": {
+      "name_hi": "आम",
+      "duration_days": 365,
+      "yield_ton_acre": 5.0,
+      "msp_inr_quintal": 4500,
+      "water_need": "Medium"
+    },
+    "grapes": {
+      "name_hi": "अंगूर",
+      "duration_days": 140,
+      "yield_ton_acre": 10.0,
+      "msp_inr_quintal": 5000,
+      "water_need": "Medium"
+    },
+    "watermelon": {
+      "name_hi": "तरबूज",
+      "duration_days": 85,
+      "yield_ton_acre": 15.0,
+      "msp_inr_quintal": 1200,
+      "water_need": "High"
+    },
+    "muskmelon": {
+      "name_hi": "खरबूजा",
+      "duration_days": 85,
+      "yield_ton_acre": 10.0,
+      "msp_inr_quintal": 1500,
+      "water_need": "Medium"
+    },
+    "apple": {
+      "name_hi": "सेब",
+      "duration_days": 365,
+      "yield_ton_acre": 8.0,
+      "msp_inr_quintal": 8000,
+      "water_need": "Medium"
+    },
+    "orange": {
+      "name_hi": "संतरा / किन्नू",
+      "duration_days": 365,
+      "yield_ton_acre": 8.0,
+      "msp_inr_quintal": 4000,
+      "water_need": "Medium"
+    },
+    "papaya": {
+      "name_hi": "पपीता",
+      "duration_days": 270,
+      "yield_ton_acre": 30.0,
+      "msp_inr_quintal": 1400,
+      "water_need": "High"
+    },
+    "coconut": {
+      "name_hi": "नारियल",
+      "duration_days": 365,
+      "yield_ton_acre": 12.0,
+      "msp_inr_quintal": 3200,
+      "water_need": "High"
+    },
+    "cotton": {
+      "name_hi": "कपास",
+      "duration_days": 160,
+      "yield_ton_acre": 1.2,
+      "msp_inr_quintal": 7121,
+      "water_need": "Medium"
+    },
+    "jute": {
+      "name_hi": "पटसन / जूट",
+      "duration_days": 120,
+      "yield_ton_acre": 1.5,
+      "msp_inr_quintal": 5335,
+      "water_need": "High"
+    },
+    "coffee": {
+      "name_hi": "कॉफी",
+      "duration_days": 365,
+      "yield_ton_acre": 1.0,
+      "msp_inr_quintal": 28000,
+      "water_need": "High"
+    }
+  }
+}

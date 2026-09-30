@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "AgriVision",
+    "slug": "AgriVision",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBFDF8",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.AgriVision.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#2E7D32",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "AgriVision uses your photo library to analyze crop images for disease detection.",
+          "cameraPermission": "AgriVision uses your camera to capture plant leaves for disease detection."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

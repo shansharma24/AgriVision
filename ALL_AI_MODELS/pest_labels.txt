@@ -1,0 +1,4 @@
+Whitefly
+Aphid
+Thrips
+Spider_Mite

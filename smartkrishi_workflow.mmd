@@ -1,0 +1,145 @@
+flowchart TD
+%% =====================================================================
+%% SMART KRISHI (स्मार्ट कृषि) — COMPLETE END-TO-END ARCHITECTURE & WORKFLOW
+%% SIH Problem Statement ID: 26180 (Qualcomm Inc. - Hardware / Edge AI)
+%% =====================================================================
+
+    subgraph FIELD_IOT["1. Field IoT Telemetry & Robotics Layer"]
+        direction TB
+        subgraph SENSORS["Field In-Situ Sensor Nodes"]
+            SN1["Node 01: Soil Moisture & Temp (Capacitive)"]
+            SN2["Node 02: Soil pH & EC Conductivity"]
+            SN3["Node 03: Optical NPK Soil Probe"]
+            SN4["Node 04: Ambient DHT22 Temp & Humidity"]
+        end
+
+        subgraph ROVER["Smart Krishi Autonomous Field Rover"]
+            RV_MCU["Onboard SBC: Raspberry Pi Zero 2 W / Qualcomm QCS6490"]
+            RV_CAM["HD Micro-Camera & Pan-Tilt Rig"]
+            RV_DPAD["Motor Drivers & 4WD Differential Chassis"]
+            RV_BATT["BMS Telemetry & Battery Monitor"]
+        end
+
+        GW["Farm LoRa / ESP-NOW / WiFi Gateway"]
+        SN1 --> GW
+        SN2 --> GW
+        SN3 --> GW
+        SN4 --> GW
+        RV_MCU -->|Telemetry & Video Feed| GW
+    end
+
+    subgraph CLOUD_NET["2. Hybrid Cloud & External APIs Layer (Optional / Online Sync)"]
+        direction TB
+        F_RTDB[("Firebase Realtime DB\ndashboard/farmer_SK001/live")]
+        F_AUTH["Firebase Auth\nPhone OTP / Google OAuth"]
+        F_STORE[("Cloud Firestore\nfarms, farmers, logs")]
+        WEATHER_API["OpenWeather & Open-Meteo APIs\nHyperlocal Forecast"]
+        AGMARKNET["Agmarknet & Mandi MSP API\nReal-time Market Rates"]
+        OAI_API["OpenAI gpt-4o-mini Multimodal\nCloud Backup / Disease Vision"]
+
+        GW -.->|Sync when 4G/WiFi available| F_RTDB
+    end
+
+    subgraph MOBILE_APP["3. React Native Mobile Application Layer (Expo Go / Android / iOS)"]
+        direction TB
+
+        subgraph APP_CORE["Core App Infrastructure"]
+            NAV["AppNavigator (Native Stack)\n26 Production Screens"]
+            CTX["AppContext & Session Store\n(AsyncStorage Offline Persistence)"]
+            THEME["Theme Engine\n(Light #FBFDF8 / Dark #1A1C19)"]
+            I18N["Vernacular Localization (i18n)\nEN, HI, MR, TE, TA, PA"]
+        end
+
+        subgraph UI_MODULES["User Facing Functional Modules"]
+            SCR_AUTH["Auth: Splash, Onboarding, Phone OTP, Google Login"]
+            SCR_FARM["Farm Management: Add/Edit Farm, FarmNodes, FarmMap"]
+            SCR_DASH["Live Dashboard: Soil Metrics Arc Gauges, Alerts, Weather"]
+            SCR_DISEASE["Disease Scanner: Camera/Gallery Picker, Leaf Processing"]
+            SCR_PEST["Micro-Pest Scanner: Sub-pixel Detection & EIL Thresholds"]
+            SCR_FERT["Fertilizer Advisory: Commercial Bag Calculator"]
+            SCR_CROP["Crop Recommendation: 22 ICAR Crops & MSP Economics"]
+            SCR_ROVER["Rover Console: Live D-Pad Control, Battery, Video Overlay"]
+            SCR_MARKET["Mandi Prices: Commodity, Variety, MSP Benchmarks"]
+            SCR_AI["Krishi Mitri: Multilingual AI Chat & Voice Assistant"]
+            SCR_SCHEMES["Govt Schemes: PM-KISAN, PMFBY, KCC Subsidies"]
+        end
+
+        NAV --> UI_MODULES
+        CTX --> NAV
+        THEME --> UI_MODULES
+        I18N --> UI_MODULES
+    end
+
+    subgraph EDGE_AI["4. Edge AI On-Device Inference Engine (100% Offline / Native C++ JSI)"]
+        direction TB
+
+        subgraph GATES["Pre-Inference Quality & Safety Gates (<5ms)"]
+            NON_LEAF{"Non-Leaf Screening Gate\nFoliar Ratio < 12%?"}
+            CROP_GATE{"Crop Mismatch Gate\nLeaf Morphology vs Selection?"}
+        end
+
+        subgraph TFLITE_MODELS["Quantized INT8 Edge Models (<4.3 MB Total)"]
+            M1["Model 1: Deep MobileNetV3 INT8 (3.86 MB)\n38 Disease Classes + BBox + Chlorosis"]
+            M2["Model 2: YOLOv8-Nano Pests INT8 (296 KB)\nAphids, Whiteflies, Thrips, Spider Mites"]
+            M3["Model 3: Retail Fertilizer Recommender (54 KB)\n45kg Urea, 50kg DAP, 50kg MOP Optimizer"]
+            M4["Model 4: Crop Recommender (23 KB)\n22 ICAR Crops with Mandi MSP Economics"]
+            M5["Model 5: Rapid Health Screening Boss INT8 (35 KB)\n160x160 Fast Screening Gate (<5ms)"]
+        end
+
+        subgraph MASKING["Hierarchical Crop-Conditioned Softmax Logit Masking"]
+            LOGIT_VEC["Raw 38 Output Logits: z ∈ ℝ³⁸"]
+            MASK_OP["Apply Crop Mask: Non-Selected Logits = -∞"]
+            PROB_CALC["P(Disease | Selected Crop) Softmax Normalization\n0.00% Cross-Crop Error Guaranteed!"]
+        end
+
+        subgraph MULTI_HEAD["Model 1 Multi-Task Simultaneous Outputs"]
+            OUT_DISEASE["Output 0: 38 Disease Probabilities [1, 38]"]
+            OUT_BBOX["Output 1: Lesion Bounding Box [ymin, xmin, ymax, xmax]"]
+            OUT_CHL["Output 2: Foliar Chlorosis Index (0.0 to 1.0)"]
+        end
+    end
+
+    %% Flow connections
+    GW -->|Real-time Socket / REST Polling| SCR_DASH
+    F_RTDB -.->|Cloud Sync| CTX
+    WEATHER_API -.->|Live Metro Data| SCR_DASH
+    AGMARKNET -.->|MSP Data| SCR_MARKET
+    F_AUTH -.->|OAuth / OTP| SCR_AUTH
+
+    %% Disease Scanner Pipeline
+    SCR_DISEASE -->|1. Capture Leaf Photo 224x224 RGB| NON_LEAF
+    NON_LEAF -->|No: Mascot/Vehicle/Face| ERR_LEAF["Alert: Invalid Image (No Leaf Detected)"]
+    NON_LEAF -->|Yes: Plant Leaf Validated| CROP_GATE
+    CROP_GATE -->|Mismatch: e.g. Corn Blade vs Tomato| ERR_CROP["Alert: Wrong Crop Selected"]
+    CROP_GATE -->|Passed: Crop Matches Morphology| M1
+
+    M1 --> LOGIT_VEC
+    LOGIT_VEC --> MASK_OP
+    MASK_OP --> PROB_CALC
+    PROB_CALC --> OUT_DISEASE
+    M1 --> OUT_BBOX
+    M1 --> OUT_CHL
+
+    OUT_DISEASE --> RES_DIS["Disease Result & Vernacular ICAR Prescription\n(Knapsack Tank Recipe: 35g / 15L Pump)"]
+    OUT_BBOX --> RES_UI["Phone Screen BBox Overlay (Red Rect on Leaf Spot)"]
+    OUT_CHL --> RES_N["Visual Mimicry Resolution\n(Chlorosis vs N-Deficiency vs Fungal Blight)"]
+
+    %% Micro Pest Pipeline
+    SCR_PEST --> M2
+    M2 --> RES_PEST["Pest Count & Economic Injury Level (EIL) Alert\n(Threshold > 5/leaf -> Biopesticide Advisory)"]
+
+    %% Fertilizer Pipeline
+    SCR_FERT -->|Inputs: Soil NPK, pH, EC, Prev Crop| M3
+    M3 --> RES_FERT["Commercial Retail Bags (45kg Urea, 50kg DAP, 50kg MOP)\n+ ₹1,440/acre Rhizobium Biological N-Credit"]
+
+    %% Crop Recommendation Pipeline
+    SCR_CROP -->|Inputs: NPK, pH, Rainfall, Rotation History| M4
+    M4 --> RES_CROP["Top 5 Ranked ICAR Crops\n+ Crop Rotation Bonus/Penalty\n+ 2024-25 Mandi MSP Gross Revenue / Acre"]
+
+    %% Rover Control
+    SCR_ROVER -->|D-Pad Commands: Fwd/Left/Right/Stop| RV_DPAD
+    RV_MCU -->|Live Sensor Strip| SCR_ROVER
+
+    %% Krishi Mitri AI Assistant
+    SCR_AI -->|Voice / Vernacular Query| OAI_API
+    OAI_API -.->|Fallback to On-Device Agronomy Engine| SCR_AI
